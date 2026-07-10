@@ -16,7 +16,8 @@ A production-shaped natural language to SQL system built on LangGraph — with S
 
 **Human-in-the-loop clarification when a question is ambiguous — the system pauses, asks, and resumes exactly where it left off:**
 
-![Clarification flow](docs/screenshots/clarification-flow.png)
+![Clarification flow](clarification-flow.png)
+
 ---
 
 ## Why this exists
