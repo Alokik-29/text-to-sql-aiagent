@@ -100,11 +100,15 @@ Defense-in-depth, not a single point of failure:
 **API**
 `FastAPI` · `Pydantic` · `PostgreSQL` (checkpointing + demo data)
 
-**Frontend**
-`React` · `Vite` · `Tailwind CSS`
+## Frontend
 
-**Infrastructure**
-`AWS EC2` · `Nginx` (reverse proxy) · `Let's Encrypt` (SSL) · `systemd` (process management) · `Docker` (Postgres) · `Vercel`
+Built with React + Vite and Tailwind CSS, using a custom design system rather than default styling. The chat interface handles three states from one backend contract — a normal answer, a paused clarification question, and an error — using plain `useState`, no external state library needed at this scale. The `interrupt`/`resume` pattern from LangGraph is handled as a two-request flow (`/query` then `/resume`), tied together by a `thread_id`.
+
+## Deployment
+
+- **Frontend** deployed on Vercel, straight from GitHub, with environment-based config for local vs. production API URLs.
+- **Backend** deployed on a hand-provisioned AWS EC2 instance (Ubuntu, `t3.micro`) — Docker, Python, and PostgreSQL set up manually over SSH. Runs as a permanent `systemd` service so it survives disconnects and reboots, sits behind an **Nginx** reverse proxy, and uses a free domain (DuckDNS) with a real **Let's Encrypt SSL certificate** so the API is served over HTTPS rather than plain HTTP.
+
 
 ## Project structure
 
