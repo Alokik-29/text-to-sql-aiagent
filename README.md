@@ -6,7 +6,7 @@
 
 A production-shaped natural language to SQL system built on LangGraph — with Self-RAG schema retrieval, human-in-the-loop clarification, self-correcting SQL generation, and defense-in-depth security. Deployed end-to-end: React frontend on Vercel, FastAPI backend on AWS EC2 behind Nginx with a real SSL certificate.
 
-[**Live Demo**](https://text-to-sql-aiagent.vercel.app) · [**API Docs**](https://text-to-sql-alokik.duckdns.org/docs) · [**Architecture**](#architecture)
+[**Live Demo**]([https://text-to-sql-aiagent.vercel.app](https://text-to-sql-aiagent-git-main-alokik.vercel.app/)) · [**API Docs**](https://text-to-sql-alokik.duckdns.org/docs) · [**Architecture**](#architecture)
 
 </div>
 
