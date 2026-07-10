@@ -187,7 +187,7 @@ npm run dev
 ## Author
 
 **Alokik Gour**
-[GitHub](https://github.com/Alokik-29) · [LinkedIn](#)
+[GitHub](https://github.com/Alokik-29) · [LinkedIn](https://www.linkedin.com/in/alokik29/)
 
 ---
 
